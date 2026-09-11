@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Start | ICT Learning Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#top"><span class="brand-mark">⌘</span><span>digital<span>start</span></span></a>
+        <nav aria-label="Main navigation">
+          <button class="nav-link active" data-view="home"><span>▦</span> Dashboard</button>
+          <button class="nav-link" data-view="courses"><span>▤</span> My learning</button>
+          <button class="nav-link" data-view="schedule"><span>◷</span> Schedule</button>
+          <button class="nav-link" data-view="resources"><span>◉</span> Digital library</button>
+          <button class="nav-link" data-view="observers"><span>♧</span> Observer view</button>
+        </nav>
+        <div class="sidebar-help">
+          <span class="help-icon">?</span>
+          <div><strong>Need a hand?</strong><small>Ask your learning guide.</small></div>
+        </div>
+        <div class="profile"><div class="avatar">AM</div><div><strong>Amina M.</strong><small>Learner account</small></div><span class="dots">•••</span></div>
+      </aside>
+
+      <main id="top">
+        <header>
+          <button class="menu-button" aria-label="Open menu">☰</button>
+          <div class="crumb"><span id="page-label">Learning dashboard</span><small>Build confidence, one click at a time.</small></div>
+          <div class="header-actions"><button class="bell" aria-label="Notifications">♢<i></i></button><button class="guide-button">Meet your guide <span>↗</span></button></div>
+        </header>
+
+        <section class="page active" id="home">
+          <section class="hero">
+            <div class="hero-copy"><p class="eyebrow">WELCOME BACK, AMINA</p><h1>Your next small step<br>can open a big door.</h1><p>Learn the essential digital skills for school, work and everyday life—at a pace that feels good.</p><button class="primary" data-view="courses">Continue learning <span>→</span></button></div>
+            <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="cloud one"></div><div class="cloud two"></div><div class="screen"><div class="screen-top"></div><div class="screen-lines"></div><div class="screen-dot"></div></div><div class="plant"><span></span><span></span><span></span></div><div class="person"><div class="hair"></div><div class="head"></div><div class="body"></div><div class="arm"></div></div></div>
+          </section>
+
+          <section class="section-heading"><div><h2>Your learning path</h2><p>A gentle pathway from first clicks to confident digital work.</p></div><button class="text-button" data-view="courses">View all courses <span>→</span></button></section>
+          <section class="course-grid" id="course-cards"></section>
+
+          <section class="bottom-grid">
+            <article class="progress-card"><div class="card-title"><div><p class="eyebrow">YOUR PROGRESS</p><h2>Keep your streak going</h2></div><span class="streak">⚡ 4 days</span></div><div class="progress-body"><div class="ring"><span>32<small>%</small></span></div><div><strong>8 lessons completed</strong><p>Finish one more lesson to unlock your first badge.</p><button class="quiet-button" data-view="courses">Resume lesson →</button></div></div></article>
+            <article class="next-card"><p class="eyebrow">COMING UP</p><h2>Keyboard practice</h2><p class="next-time">Tomorrow · 10:00 AM</p><div class="teacher"><div class="avatar purple">JN</div><span>With Joseph, learning guide</span></div><button class="calendar-button" data-view="schedule">View schedule <span>→</span></button></article>
+          </section>
+        </section>
+
+        <section class="page" id="courses">
+          <div class="page-intro"><p class="eyebrow">LEARNING CATALOGUE</p><h1>Choose your next skill</h1><p>Every course uses simple language, guided practice and short quizzes.</p></div>
+          <div class="filter-row" id="filters"><button class="filter selected" data-level="all">All learners</button><button class="filter" data-level="primary">Primary</button><button class="filter" data-level="secondary">Secondary</button><button class="filter" data-level="adult">Adult beginner</button></div>
+          <section class="catalogue" id="catalogue"></section>
+        </section>
+
+        <section class="page" id="schedule">
+          <div class="page-intro"><p class="eyebrow">YOUR WEEK</p><h1>Learning schedule</h1><p>Book a guided session or use the self-study lessons anytime.</p></div>
+          <div class="schedule-grid" id="schedule-grid"></div>
+        </section>
+
+        <section class="page" id="resources">
+          <div class="page-intro"><p class="eyebrow">EXPLORE</p><h1>Digital library</h1><p>Friendly resources to support every first step.</p></div>
+          <div class="resource-grid"><article><span>▣</span><h2>Computer words</h2><p>A picture glossary: mouse, keyboard, file, browser and more.</p><button class="quiet-button">Open guide →</button></article><article><span>◫</span><h2>Safe online</h2><p>Simple habits for passwords, privacy and kind communication.</p><button class="quiet-button">Open guide →</button></article><article><span>▷</span><h2>Watch & learn</h2><p>Short videos for typing, Word, spreadsheets and email.</p><button class="quiet-button">View videos →</button></article></div>
+        </section>
+
+        <section class="page" id="observers">
+          <div class="page-intro"><p class="eyebrow">FOR PARENTS &amp; TEACHERS</p><h1>Observer dashboard</h1><p>Follow progress, encourage effort, and see upcoming learning activities.</p></div>
+          <div class="observer-summary"><article><small>ACTIVE LEARNERS</small><strong>28</strong><span>↑ 4 this week</span></article><article><small>LESSONS COMPLETED</small><strong>164</strong><span>↑ 18 this week</span></article><article><small>AVERAGE ATTENDANCE</small><strong>91%</strong><span>Strong engagement</span></article></div>
+          <article class="observer-note"><div><span>✦</span><h2>Encouragement works</h2><p>Celebrate progress, not perfection. A short “well done” after a completed lesson makes learners more likely to continue.</p></div><button class="primary">Download progress report</button></article>
+        </section>
+      </main>
+    </div>
+    <dialog id="enrol-dialog"><button class="close" aria-label="Close">×</button><p class="eyebrow">ENROLMENT</p><h2>Ready to begin?</h2><p id="dialog-course">You are enrolling in this course.</p><label>Your full name<input id="learner-name" placeholder="Type your name" required /></label><label>Email or phone number<input id="learner-contact" placeholder="How we can reach you" required /></label><button class="primary" id="confirm-enrol">Save my place →</button><small>Your details are saved only for course enrolment.</small></dialog>
+    <div class="toast" id="toast">Your place has been saved. Welcome aboard!</div>
+    <script src="app.js"></script>
+  </body>
+</html>
